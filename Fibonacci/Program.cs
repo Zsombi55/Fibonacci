@@ -16,12 +16,13 @@ namespace Fibonacci
 			double[] n = {6, 19, 28, 36, 38};
 			
 			for (int i = 0; i < n.Length; i++)
-			{
-				Console.WriteLine(Fibonacci(n[i])); // i don't know why it gives an error, in JS this worked just fine.
+			{ // I don't know why it gives an error, in JS this worked just fine without making the called method static too.
+				Console.WriteLine(Fibonacci(n[i]));
 			}
+			Console.ReadLine();
 		}
 		
-		public double Fibonacci(double n) {
+		private static double Fibonacci(double n) {
     		double p = (1 + Math.Sqrt(5))/2;
     		double a = Math.Pow(p, n) / Math.Sqrt(5);
 

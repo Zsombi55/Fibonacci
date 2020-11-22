@@ -1,3 +1,6 @@
 D:\SULI\C# .NET\Fibonacci\Fibonacci\obj\Debug\Fibonacci.csprojResolveAssemblyReference.cache
-D:\SULI\C# .NET\Fibonacci\Fibonacci\obj\Debug\Fibonacci.csprojAssemblyReference.cache
-D:\SULI\C# .NET\Fibonacci\Fibonacci\obj\Debug\Fibonacci.csproj.CoreCompileInputs.cache
+D:\SULI\C# .NET\Fibonacci\Fibonacci\bin\Debug\Fibonacci.exe.config
+D:\SULI\C# .NET\Fibonacci\Fibonacci\bin\Debug\Fibonacci.exe
+D:\SULI\C# .NET\Fibonacci\Fibonacci\bin\Debug\Fibonacci.pdb
+D:\SULI\C# .NET\Fibonacci\Fibonacci\obj\Debug\Fibonacci.exe
+D:\SULI\C# .NET\Fibonacci\Fibonacci\obj\Debug\Fibonacci.pdb
