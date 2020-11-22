@@ -17,7 +17,7 @@ namespace Fibonacci
 			
 			for (int i = 0; i < n.Length; i++)
 			{
-				Console.WriteLine(Fibonacci(n[i]));
+				Console.WriteLine(Fibonacci(n[i])); // i don't know why it gives an error, in JS this worked just fine.
 			}
 		}
 		
