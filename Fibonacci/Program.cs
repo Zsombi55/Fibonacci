@@ -10,15 +10,14 @@ namespace Fibonacci
 {
 	class Program
 	{
-		int n = [6, 19, 28, 36, 38];
-		
 		public static void Main(string[] args)
 		{
 			// F_n = Phi^n / sqrt(5) generally rounded up.
-
-			for (var i = 0; i < n.length; i++)
+			int[] n = {6, 19, 28, 36, 38};
+			
+			for (var i = 0; i < n.Length; i++)
 			{
-				Console.WriteLine(Fibonacci(n[i]));
+				Console.WriteLine(Program.Fibonacci(n[i]));
 			}
 		}
 		

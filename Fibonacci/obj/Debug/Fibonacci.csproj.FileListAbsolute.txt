@@ -1,1 +1,3 @@
 D:\SULI\C# .NET\Fibonacci\Fibonacci\obj\Debug\Fibonacci.csprojResolveAssemblyReference.cache
+D:\SULI\C# .NET\Fibonacci\Fibonacci\obj\Debug\Fibonacci.csprojAssemblyReference.cache
+D:\SULI\C# .NET\Fibonacci\Fibonacci\obj\Debug\Fibonacci.csproj.CoreCompileInputs.cache

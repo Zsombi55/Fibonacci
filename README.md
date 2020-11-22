@@ -1,0 +1,1 @@
+This is supposed to determine the fibonacci series from a set of given numbers.
