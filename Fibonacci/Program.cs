@@ -13,19 +13,19 @@ namespace Fibonacci
 		public static void Main(string[] args)
 		{
 			// F_n = Phi^n / sqrt(5) generally rounded up.
-			int[] n = {6, 19, 28, 36, 38};
+			double[] n = {6, 19, 28, 36, 38};
 			
-			for (var i = 0; i < n.Length; i++)
+			for (int i = 0; i < n.Length; i++)
 			{
-				Console.WriteLine(Program.Fibonacci(n[i]));
+				Console.WriteLine(Fibonacci(n[i]));
 			}
 		}
 		
-		private int Fibonacci(int n) {
-    		let p = (1 + Math.sqrt(5))/2;
-    		let a = Math.pow(p, n) / Math.sqrt(5);
+		public double Fibonacci(double n) {
+    		double p = (1 + Math.Sqrt(5))/2;
+    		double a = Math.Pow(p, n) / Math.Sqrt(5);
 
-   			return Math.round(a);
+   			return Math.Round(a);
 		}
 	}
 }
