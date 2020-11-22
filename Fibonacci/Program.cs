@@ -2,7 +2,7 @@
  * Created by SharpDevelop.
  * User: Zsombor
  * Date: 2020-11-22
- * Time: 16:22
+ * Time: 16:22 - 20:37
  */
 using System;
 
@@ -17,7 +17,7 @@ namespace Fibonacci
 			double[] n = {6, 19, 28, 36, 38};
 			
 			for (int i = 0; i < n.Length; i++)
-			{ // I don't know why it gives an error, in JS this worked just fine without making the called method static too.
+			{ // In JS this worked just fine without making the called method static too.
 				Console.WriteLine(P.Fibonacci(n[i]));
 			}
 			Console.ReadLine();
