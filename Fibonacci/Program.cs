@@ -2,7 +2,8 @@
  * Created by SharpDevelop.
  * User: Zsombor
  * Date: 2020-11-22
- * Time: 16:22
+ * This is an exercise from the Catalysts Coding Contest webpage.
+ * The goal is not making a Fibonacci sequence as usual, but estimating certain results based on a given series of numbers.
  */
 using System;
 using System.IO;
@@ -13,44 +14,43 @@ namespace Fibonacci
 	{
 		public static void Main(string[] args)
 		{
-			Program P = new Program();
+			
 			// F_n = Phi^n / sqrt(5) generally rounded up.
-			double[] n = {6, 19, 28, 36, 38};
-			ReadFromFile(@"D:\SULI\C# .NET\Fibonacci\Fibonacci\InputFile.txt");
+			//long[] n = {6, 19, 28, 36, 38};
+			long[] nr = ReadFromFile(@"D:\SULI\C# .NET\Fibonacci\Fibonacci\InputFile.txt");
 			
 			Console.WriteLine();
-			for (int i = 0; i < n.Length; i++)
+			for (int i = 0; i < nr.Length; i++)
 			{ // In JS this worked just fine without making the called method static too.
-				Console.WriteLine(P.MakeFibonacci(n[i]));
+				Console.WriteLine(MakeFibonacci(nr[i]));
 			}
 									
 			Console.ReadKey();
 		}
 		
-		private double MakeFibonacci(double n) {
+		private static long MakeFibonacci(long nr) {
     		double p = (1 + Math.Sqrt(5))/2;
-    		double a = Math.Pow(p, n) / Math.Sqrt(5);
+    		double a = Math.Pow(p, nr) / Math.Sqrt(5);
 
-   			return Math.Round(a);
+    		return (long)Math.Round(a);
 		}
 		
-		static void ReadFromFile(string path) {
+		static long[] ReadFromFile(string path) {
 			if(File.Exists(path)) {
 				string[] dataFromFile = File.ReadAllLines(path);
+				long[] n = new long[dataFromFile.Length];
 				
-				foreach(string d in dataFromFile) {
-					Console.Write(d + " ");					
+				for(int i = 0; i < dataFromFile.Length; i++) {
+					Console.Write(dataFromFile[i] + " ");
+					Console.WriteLine();
+					n[i] = long.Parse(dataFromFile[i]);
 				}
-				Console.WriteLine();
-//				double[] n = new double[dataFromFile.Length];
-//
-//				for(int i = 0; i < dataFromFile.Length; i++)
-//				{
-//					n[i] = Double.Parse(dataFromFile[i]);
-//				}
+				
+				return n;
 			}
 			else {
 				Console.WriteLine("The file doesn't exist or path is wrong.");
+				return new long[0];
 			}
 		}
 	}
